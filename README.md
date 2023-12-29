@@ -1,4 +1,6 @@
-# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+# Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit
+# BY: VIGNESH.V
+# REGISTER NUMBER : 23004027
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
@@ -34,21 +36,49 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
-### 
-Program:
-/*
-Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
+### Program:
+# Half Adder:
+
+```
+module halfadder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor(sum,a,b);
+and(carry,a,b)
+endmodule
+```
+# Full Adder
+
+```
+module halfadder(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+xor(sum,a,b,c);
+assign carry=a&b | b&c | a&c
+endmodule
+```
+### TRUTH TABLE: 
+Half Adder Circuit:
+![Screenshot 2023-12-18 161643](https://github.com/23004027/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/138956447/c1e52f63-54d0-439d-b7e2-c9c5984310fc)
+
+Full Adder Circuit:
+![Screenshot 2023-12-18 161651](https://github.com/23004027/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/138956447/5eae28dc-f9ce-4cc0-aad0-4587e8b84a02)
+
+### RTL:
+Half Adder Circuit:
+![Screenshot 2023-12-18 161713](https://github.com/23004027/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/138956447/5b869572-a565-4f69-ae87-b13c296720cb)
+
+Full Adder Circuit:
+![Screenshot 2023-12-18 161727](https://github.com/23004027/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/138956447/f88f6d90-d31e-4c45-a636-729a3e0c7b8c)
 
 ### Output:
-### RTL
-### TIMING DIAGRAM
+Half Adder Circuit:
+![Screenshot 2023-12-18 161801](https://github.com/23004027/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/138956447/808e2fca-fc78-48f2-8e81-fa4be872aca6)
 
 
-### TRUTH TABLE 
+Full Adder Circuit:
+![Screenshot 2023-12-18 161816](https://github.com/23004027/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/138956447/674ce8ea-ad23-4789-be42-23101210ba95)
+
 
 ### Result:
+To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming.
