@@ -1,6 +1,6 @@
 # Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit
-# BY: Sanjai S
-# REGISTER NUMBER : 23003393
+# BY: Kishore A
+# REGISTER NUMBER : 23008615
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
